@@ -13,12 +13,21 @@
   src: url(/Assets/Font/Montserrat-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(/Assets/Font/static/Montserrat-Black.ttf);
+}
+
 body {
   font-family: montserrat;
 }
 
 .text-white {
   color: #fff !important;
+}
+
+.clear {
+  clear: both;
 }
 
 .text-10px {
@@ -685,11 +694,570 @@ body {
   }
 }
 
-#footer {
-  margin-top: 120px;
-  padding-bottom: 100px;
+#ctv .ctv-first-part {
+  background-color: #133ab7;
+  padding: 100px 230px 0 230px;
+  position: relative;
+}
+
+#ctv .ctv-first-part .title h3 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#ctv .ctv-first-part .title p {
+  font-size: 16px;
+  text-align: center;
+}
+
+#ctv .ctv-first-part .content {
+  margin-top: 45px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+#ctv .ctv-first-part .content h5 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#ctv .ctv-first-part .content .decs {
+  border: solid 1px #fff;
+  font-size: 14px;
+  padding: 20px 15px;
+  text-align: justify;
+  margin: 20px 30px;
+}
+
+#ctv .ctv-first-part .content .decs:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#ctv .ctv-first-part img {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  animation: bong-hong 2s linear infinite;
+}
+
+@keyframes bong-hong {
+  0%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 80%;
+  }
+}
+
+#ctv .ctv-second-part {
+  margin-top: 60px;
+  position: relative;
+}
+
+#ctv .ctv-second-part .main-content {
+  display: flex;
+  padding-bottom: 170px;
+  margin-left: 140px;
+}
+
+#ctv .ctv-second-part .time {
+  color: #006ab0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+#ctv .ctv-second-part .timemap {
+  position: relative;
+  width: 765px;
+}
+
+#ctv .ctv-second-part .timemap-content {
+  position: absolute;
+  top: 0;
+  left: -9px;
+  margin-top: 25px;
+}
+
+#ctv .ctv-second-part .timemap-content .decs p {
+  color: #fff;
+  margin-left: 25px;
+  font-size: 16px;
+}
+
+#ctv .ctv-second-part .timemap-content .decs {
+  margin-bottom: 50px;
+}
+
+#ctv .ctv-second-part .gr64 {
+  position: absolute;
+  top: 0;
+  right: 85px;
+}
+
+#ctv .ctv-second-part .sub-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#ctv .ctv-second-part .sub-content .button-and-logo {
+  display: flex;
+}
+
+#ctv .ctv-second-part .button-and-logo .logo {
+  margin-left: 10px;
+}
+
+#ctv .ctv-second-part .sub-content p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#ctv .ctv-second-part .sub-content .button {
+  position: relative;
+  display: inline-block;
+  padding: 23px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #ed1e79;
+}
+
+#ctv .ctv-second-part .sub-content .button span {
+  position: absolute;
+  display: block;
+}
+
+#ctv .ctv-second-part .sub-content .button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, red);
+}
+
+#ctv .ctv-second-part .sub-content .button:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+#ctv .ctv-second-part .sub-content .button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, red);
+}
+
+#ctv .ctv-second-part .sub-content .button:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#ctv .ctv-second-part .sub-content .button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, red);
+}
+
+#ctv .ctv-second-part .sub-content .button:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#ctv .ctv-second-part .sub-content .button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, red);
+}
+
+#ctv .ctv-second-part .sub-content .button:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+#ctv .ctv-second-part .grey-layer {
+  width: 90%;
+  height: 450px;
+  background-color: #606060;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+#contact {
+  margin-left: 150px;
+}
+
+#contact h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 38px;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+#contact h3 span {
+  color: #ff0092;
+}
+
+#contact .contact-content {
+  display: flex;
+}
+
+#contact .contact-content .form p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#contact .contact-content .form input {
+  width: 580px;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #000;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  padding-left: 50px;
+}
+
+#contact .contact-content .form .image {
+  position: relative;
+}
+
+#contact .contact-content .form .btn-gui {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#contact .contact-content .form .image img {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contact .contact-content .right {
+  width: 100%;
+  margin-left: 80px;
+  margin-top: 30px;
+  position: relative;
+}
+
+#contact .contact-content .right .right-content {
+  position: absolute;
+  z-index: 1;
+}
+
+#contact .contact-content .right p {
+  width: 440px;
+  color: #fff;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+#contact .contact-content .right img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-10%);
+  z-index: 0;
+}
+
+#kienflex .kienflex-firstpart {
+  position: relative;
+  background-color: #000;
+  height: 750px;
+}
+
+#kienflex .kienflex-firstpart .background {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#kienflex .kienflex-firstpart .kienflex-firstpart-posts {
+  width: 35%;
+  position: absolute;
+  top: -30px;
+  right: 140px;
+}
+
+#kienflex .kienflex-firstpart .kienflex-firstpart-posts .post {
+  background-color: rgba(96, 96, 96, 0.5);
+  margin-top: 60px;
+  padding: 35px;
+  border-radius: 5px;
+}
+
+#kienflex .kienflex-firstpart .kienflex-firstpart-posts .post h5 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Montserrat-Black;
+  color: #FBB03B;
+}
+
+#kienflex .kienflex-firstpart .kienflex-firstpart-posts .post p {
+  font-size: 12px;
+  color: #fff;
+  text-align: justify;
+  border-top: 1px solid #fff;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+#kienflex .kienflex-secondpart .background h5{
+  font-size: 28px;
+  font-family: Montserrat-Black;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#kienflex .kienflex-secondpart .background p {
+  font-size: 20px;
+  text-align: center; 
+  color: #fff;
+}
+
+#kienflex .kienflex-secondpart .background {
+  padding-top: 10px;
+  background-color: rgba(96, 96, 96, 0.5);
+  position: relative;
+  padding-bottom: 50px;
+} 
+
+#kienflex .kienflex-secondpart .carousel .card {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#kienflex .kienflex-secondpart .maincontent {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
+
+#kienflex .kienflex-secondpart .members {
+  max-width: 998px;
+  width: 100%;
+  position: relative;
+}
+
+#kienflex .kienflex-secondpart .members .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% /3));
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+#kienflex .kienflex-secondpart .card .image img {
+  width: 282px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#kienflex .kienflex-secondpart .card:hover .image img {
+  width: 350px;
+  transition: 1s;
+}
+
+#kienflex .kienflex-secondpart .hidden {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% /3));
+  overflow: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  width: 998px;
+  transform: translateX(25px);
+}
+
+#kienflex .kienflex-secondpart .hidden-content {
+  width: 282px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#kienflex .kienflex-secondpart .hidden-content .slogan {
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+#kienflex .kienflex-secondpart .arrow {
+  cursor: pointer;
+  position: absolute;
+}
+
+#kienflex .kienflex-secondpart #right {
+  right: -67px;
+  top: 125px;
+}
+
+#kienflex .kienflex-secondpart #left {
+  left: -70px;
+  top: 125px;
+}
+
+#kienflex .kienflex-secondpart .tamgiacvang {
+  margin-bottom: 20px;
+}
+
+#kienflex .kienflex-secondpart .modal {
+  position: absolute;
+  top: 70px;
+  width: 1200px;
+  height: 620px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt {
+  display: inline-block;
+  width: 610px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  position: relative;
+  padding: 20px 0;
+  padding-left: 252px;
+  padding-right: 35px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt-decs {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fcee21;
+  padding-bottom: 30px;
+  padding-right: 550px;
+  padding-left: 50px;
+  margin-left: 115px;
+  bottom: 40px;
+  display: flex;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt-decs p {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: Montserrat-Black;
+  margin-top: 30px;
+  width: 300px;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt-decs span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt-decs .mama {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+}
+
+#kienflex .kienflex-secondpart .modal h5,
+#kienflex .kienflex-secondpart .modal .kien-tt h5 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Montserrat-Black;
+}
+
+#kienflex .kienflex-secondpart .modal h5 {
+  text-align: left;
+}
+
+#kienflex .kienflex-secondpart .modal p {
+  color: #fff;
+  text-align: center;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt p {
+  color: #fff;
+  text-align: justify;
+}
+
+#kienflex .kienflex-secondpart .modal .kien-tt img {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+
+#kienflex .kienflex-secondpart .modal .gr105 {
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+}
+
+#kienflex .kienflex-secondpart .modal .gr78 {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#kienflex .kienflex-secondpart .modal1 {
+  display: block;
+}
+
+
+
+#footer {
+  height: 100px;
+  background-color: #000;
+}
+
+
 
 
