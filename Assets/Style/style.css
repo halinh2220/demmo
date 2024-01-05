@@ -1039,16 +1039,17 @@ body {
 }
 
 #kienflex .kienflex-secondpart .background h5{
-  font-size: 28px;
-  font-family: Montserrat-Black;
   color: #fff;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 28px;
+  font-family: Montserrat-Black;
 }
 
 #kienflex .kienflex-secondpart .background p {
   font-size: 20px;
+  font-family: Montserrat-Black
   text-align: center; 
   color: #fff;
 }
