@@ -33,4 +33,38 @@ function momodal5(){
     else query.classList.add("active");
 }
 
+const arrowBtns = document.querySelectorAll(".modal-homepage .arrow");
+const carousel = document.querySelector(".modal-homepage .between");
+
+console.log(carousel);
+
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollTop += btn.id === "up" ? - 200 : 200;
+    })
+})
+
+const Homepagemodal = document.querySelector(".modal-homepage");
+console.log(Homepagemodal);
+
+function appearHomepagemodal(){
+    Homepagemodal.classList.add("active");
+}
+
+function disappearHomepagemodal(){
+    Homepagemodal.classList.remove("active");
+}
+
+const ecogreen = document.querySelector(".wrapecogreen");
+
+console.log(ecogreen);
+
+function appearecogreen (){
+    ecogreen.classList.add("active");
+}
+
+function disappearecogreen (){
+    ecogreen.classList.remove("active");
+}
+
 
